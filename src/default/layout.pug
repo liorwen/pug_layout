@@ -1,0 +1,15 @@
+block define
+    - var title = "default";
+doctype html
+html
+    head
+
+        title 測試 #{title}
+        include head.pug
+        block scripts
+            script(src='/jquery.js')
+    body
+        block content
+        block foot
+            #footer
+                p 2019 test
